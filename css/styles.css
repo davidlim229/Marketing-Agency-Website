@@ -1,1 +1,146 @@
-/* font-family: 'Montserrat', sans-serif; */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+/**********
+TYPOGRAPHY
+**********/
+h1,
+h2,
+strong {
+    font-weight: 700;
+    margin: 0;
+}
+
+.intro-heading {
+    font-size: 24px;
+}
+
+.intro-subtext {
+    font-size: 18px;
+}
+
+.intro {
+    color: white;
+}
+
+.accent-color {
+    color: #FFE600;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-primary {
+    color: black;
+    font-size: 14px;
+    background: #FFE600; 
+    padding: .5em 1em;
+    justify-self: start;
+    transition: all 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: #f2be41;
+    transform: scale(1.05);
+}
+
+.footer-logo,
+.footer-text,
+.copyright {
+    opacity: 40%;
+}
+
+.footer-text {
+    margin-bottom: 2em;
+}
+
+.social-link {
+    color: black;
+    font-size: 1.4rem;
+}
+
+.social-item {
+    margin: 0 .2em;
+}
+
+.footer-logo {
+    margin: 0 auto;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+/***********
+LAYOUT
+***********/
+
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(1.5em, 1fr) auto minmax(1.5em, 1fr);
+}
+
+.intro > *,
+.subsections > *,
+footer > * {
+    grid-column: 2 / -2;
+}
+
+/* INTRO */
+.intro {
+    background: black;
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: right;
+    padding: 2em 0;
+}
+
+/* SUBSECTIONS */
+
+.subsections {
+    padding: 2em 0;
+}
+
+section {
+    margin-top: 1em;
+}
+
+section:first-child {
+    margin-top: 0;
+}
+
+.subsections,
+footer {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #EBEBEB;
+    padding: 1em 0;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link:hover {
+    opacity: 50%;
+}
