@@ -9,22 +9,26 @@
         <script src="https://kit.fontawesome.com/ea52bbfdc2.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <!-- <header class="main-grid">
-            <img class="site-logo" src="img/logo.png" alt="logo">
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">about us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header> -->
+        <header class="header-home main-grid">
+            <div class="header-content">
+                <img class="site-logo" src="img/logo.png" alt="logo">
+                <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+                <nav>
+                    <button aria-label="close navigation" class="close-nav">&times;</button>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <main>
             <div class="intro main-grid">
                 <h1 class="intro-heading">The only marketing agency on <span class="accent-color">a mission from God</span>, fully dedicated to increase your web traffic.</h1>
@@ -58,9 +62,12 @@
                     <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                 </li>
             </ul>
-            <img class="footer-logo" src="img/logo.png" alt="logo">
-            <p class="footer-text">Two brothers from Chicago that are just trying to pay back their debt by helping others with their SEO, SEM, and Content Marketing needs.</p>
-            <p class="copyright">© Jake&Elwood 2019</p>
+            <div class="footer-content">
+                <img class="footer-logo" src="img/logo.png" alt="logo">
+                <p class="footer-text">Two brothers from Chicago that are just trying to pay back their debt by helping others with their SEO, SEM, and Content Marketing needs.</p>
+                <p class="copyright">© Jake&Elwood 2019</p>
+            </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
