@@ -55,6 +55,20 @@ strong {
     font-size: 18px;
 }
 
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FFE600;
+    margin: 7px 0 0;
+}
+
+.center-title::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .intro {
     color: white;
 }
@@ -70,6 +84,7 @@ strong {
 .btn {
     text-decoration: none;
     font-weight: 700;
+    border: none;
 }
 
 .btn-primary {
@@ -209,6 +224,10 @@ nav {
     padding: 6em 0 4em;
 }
 
+.intro .subtitle {
+    text-align: left;
+}
+
 /* SUBSECTIONS */
 
 .subsections {
@@ -269,6 +288,46 @@ TEMPLATE PAGE
 .main-image {
     margin-bottom: 1.5em;
     box-shadow: 4px 4px 0 black, 8px 8px 0 #FFE600;
+}
+
+.page-title {
+    justify-self: center;
+}
+
+.page-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin-top: -40px;
+    background: #FFE600;
+}
+
+/**************
+FORM
+**************/
+.contact-form {
+    display: grid;
+}
+
+input,
+textarea {
+    padding: .4em;
+    margin-bottom: .75em;
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+label {
+    font-weight: 700;
+}
+
+.contact-form .btn {
+    justify-self: end;
 }
 
 @media (min-width: 400px) {
@@ -339,6 +398,10 @@ TEMPLATE PAGE
 
     .main-text {
         grid-column: 3 / span 2;
+    }
+
+    .secondary-text {
+        order: 2;
     }
 
 }
